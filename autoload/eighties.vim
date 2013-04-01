@@ -51,8 +51,14 @@ function! s:total_left_width()
 endfunction
 
 function! s:sign_width()
+  let l:current_file = expand("%p")
+
+  if l:current_file == ""
+    return 0
+  endif
+
   redir => signs
-  silent exe ":sign place file=" . expand("%:p")
+  silent exe ":sign place file=" . l:current_file
   redir END
 
   if len(split(signs, '\n')) >= 3
