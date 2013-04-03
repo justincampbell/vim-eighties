@@ -53,7 +53,7 @@ endfunction
 function! s:sign_width()
   let l:current_file = expand("%p")
 
-  if l:current_file == ""
+  if !filereadable(l:current_file)
     return 0
   endif
 
