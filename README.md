@@ -9,7 +9,7 @@
 * Resizes the width of the current window when switching
 * Calculates the minimum width (80 by default) + line numbers/signs/etc
 * Won't shrink the current window
-* Won't resize file browsers, such as NERDTree
+* Won't resize side panels (supports NERDTree and vimpanel)
 
 ## Installation
 
