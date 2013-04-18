@@ -25,7 +25,7 @@ function! eighties#EightiesResize()
 endfunction
 
 function! s:in_file_browser()
-  for pattern in ["NERD_tree"]
+  for pattern in ["NERD_tree", "vimpanel"]
     if bufname("%") =~ pattern
       return 1
     endif
