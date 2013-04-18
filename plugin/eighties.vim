@@ -1,6 +1,6 @@
 " eighties.vim - Automatically resizes your windows
 " Author: Justin Campbell <http://justincampbell.me>
-" Version: 1.0.4
+" Version: 1.0.5
 
 if exists('g:loaded_eighties') || &cp || v:version < 700
   finish

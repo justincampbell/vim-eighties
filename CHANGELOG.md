@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+* Added vimpanel support (@dexterry)
+
 ## 1.0.4
 
 * Fixed occasional errors with lots of buffers
