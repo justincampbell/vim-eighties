@@ -25,11 +25,23 @@ function! eighties#EightiesResize()
 endfunction
 
 function! s:in_file_browser()
+  if s:nerd_tree_just_opened()
+    return 1
+  endif
+
   for pattern in ["NERD_tree", "vimpanel"]
     if bufname("%") =~ pattern
       return 1
     endif
   endfor
+
+  return
+endfunction
+
+function! s:nerd_tree_just_opened()
+  if exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) == -1
+    return 1
+  endif
 
   return
 endfunction
