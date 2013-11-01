@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+
+* Fix NERDtree detection
+
 ## 1.0.5
 
 * Added vimpanel support (@dexterry)
