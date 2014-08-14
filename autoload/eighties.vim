@@ -14,6 +14,10 @@ if !exists('g:eighties_compute')
   let g:eighties_compute = 1
 endif
 
+if !exists('g:eighties_blacklist')
+  let g:eighties_blacklist = ["NERD_tree", "vimpanel"]
+endif
+
 function! eighties#EightiesResize()
   if g:eighties_enabled && !s:in_file_browser()
     let l:size = s:new_width()
@@ -29,7 +33,7 @@ function! s:in_file_browser()
     return 1
   endif
 
-  for pattern in ["NERD_tree", "vimpanel"]
+  for pattern in g:eighties_blacklist
     if bufname("%") =~ pattern
       return 1
     endif
