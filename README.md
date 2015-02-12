@@ -13,6 +13,15 @@
 
 ## Installation
 
+If you don't already use a plugin manager, I recommend
+[vim-plug](https://github.com/junegunn/vim-plug)
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
+
+```viml
+Plug 'justincampbell/vim-eighties'
+```
+
 ### [Vundle](https://github.com/gmarik/vundle)
 
 ```viml
