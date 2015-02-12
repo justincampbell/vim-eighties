@@ -16,7 +16,7 @@
 ### [Vundle](https://github.com/gmarik/vundle)
 
 ```viml
-Bundle 'justincampbell/vim-eighties'
+Plugin 'justincampbell/vim-eighties'
 ```
 
 ### [Pathogen](https://github.com/tpope/vim-pathogen)
