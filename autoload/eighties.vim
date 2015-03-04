@@ -59,7 +59,7 @@ function! s:total_left_width()
     return 0
   endif
 
-  return s:sign_width() + s:line_number_width() + s:extra_space_width()
+  return s:sign_width() + s:line_number_width()
 endfunction
 
 function! s:sign_width()
@@ -88,11 +88,7 @@ function! s:line_number_width()
   let l:numberwidth = &numberwidth
   let l:smallestwidth = strlen(line('$'))
 
-  return s:max([l:smallestwidth, l:numberwidth])
-endfunction
-
-function! s:extra_space_width()
-  return 1
+  return s:max([l:smallestwidth, l:numberwidth]) + 1
 endfunction
 
 function! s:max(list)
