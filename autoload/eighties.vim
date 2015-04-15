@@ -29,7 +29,12 @@ function! s:in_file_browser()
     return 1
   endif
 
-  for pattern in ["NERD_tree", "vimpanel"]
+  let patterns = ["NERD_tree", "vimpanel"]
+  if exists('g:eighties_bufname_additional_patterns')
+    let patterns = patterns + g:eighties_bufname_additional_patterns
+  endif
+
+  for pattern in patterns
     if bufname("%") =~ pattern
       return 1
     endif
