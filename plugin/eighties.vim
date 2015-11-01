@@ -9,4 +9,4 @@ let g:loaded_eighties = 1
 
 command! EightiesResize call eighties#EightiesResize()
 
-autocmd WinEnter,BufWritePost * EightiesResize
+autocmd WinEnter,BufEnter,BufWinEnter,BufWritePost * EightiesResize
