@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.8
+
+* Fix logic for line number width
+* Allow for optional list of bufnames to not resize (@jondkinney)
+* Fix resize after first open (@flyingwitholdlady)
+
 ## 1.0.7
 
 * Fix error when files change outside of Vim (@mattmcmanus)
