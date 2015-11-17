@@ -24,6 +24,10 @@ function! eighties#EightiesResize()
   endif
 endfunction
 
+function! eighties#EightiesEnable(enabled)
+  let g:eighties_enabled = a:enabled
+endfunction
+
 function! s:in_file_browser()
   if s:nerd_tree_just_opened()
     return 1
