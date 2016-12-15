@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.9
+
+* Add EightiesDisable and EightiesEnable commands
+
 ## 1.0.8
 
 * Fix logic for line number width
